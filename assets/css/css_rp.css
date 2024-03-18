@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+.col-md-6 {
+  float: left;
+  position: fixed;
+  left: 25%;
+}
+
+.main-cv-page {
+  display: flex;
+}
+
+.main-cv-page > .work-experience.group {
+  display: flex;
+  justify-content: right;
+}
+
+.main-cv-page > .col-md-6 {
+  justify-content: left;
+}
+
+.portfolio-block.block-intro {
+  height: 560px;
+}
+
+.about-me {
+  text-align: left;
+  width: 2000px;
+  background-color: #5f7df7;
+}
+
+.brief {
+  padding: 2vw 1vh;
+  font-size: 1.5em;
+}
+
+.ingredient {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.ingredient-icon {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust as needed */
+  margin: 10px; /* Adjust as needed */
+  text-align: center;
+}
