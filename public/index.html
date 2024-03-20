@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth snap-y snap-mandatory" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="icon" href="./img/icons/favicon-16x16.ico" />
     <!-- FONTS 1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,12 +29,16 @@
     />
     <!-- TAILWIND -->
     <link href="/src/output.css" rel="stylesheet" />
-    <title>VACC COOKBOOK</title>
+    <title>HOME - VACC COOKBOOK</title>
   </head>
   <body class="bg-principal">
+    <!-- NOISE -->
     <div id="noise"></div>
-    <header class="relative h-screen">
-      <nav class="flex items-center h-1/6 bg-third">
+    <!-- LANDING -->
+    <header class="h-screen snap-always snap-start">
+      <nav
+        class="fixed top-0 z-50 flex items-center w-full backdrop-blur-md h-1/6 bg-third"
+      >
         <div class="flex justify-between w-4/5 mx-auto text-second">
           <!-- left -->
           <div class="flex items-center w-max justify-evenly">
@@ -50,18 +56,20 @@
             <a
               class="inline-flex items-center px-4 py-2 rounded bg-second regular text-principal h-max hover:bg-gray-400 hover:duration-500"
               href="#"
-              >MENU</a
+              >RECIPES</a
             >
           </div>
         </div>
       </nav>
       <section
-        class="relative flex flex-col items-center justify-center w-screen h-5/6"
+        class="relative flex flex-col items-center justify-center w-screen h-full"
       >
-        <h1 class="py-5 text-center text-second text-9xl principal h-max">
+        <h1
+          class="py-5 text-center select-none text-second text-9xl principal h-max"
+        >
           VACC<br />COOKBOOK
         </h1>
-        <a class="absolute bottom-4 motion-safe:animate-bounce" href=""
+        <a class="absolute bottom-4 motion-safe:animate-bounce" href="#about"
           ><img
             class="w-14"
             src="../public/img/icons/arrowdown.svg"
@@ -69,5 +77,10 @@
         /></a>
       </section>
     </header>
+    <!-- ABOUT SECTION -->
+    <section
+      id="about"
+      class="h-screen snap-always snap-start bg-second"
+    ></section>
   </body>
 </html>
