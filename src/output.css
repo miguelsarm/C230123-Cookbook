@@ -631,24 +631,19 @@ video {
   border-radius: 0.25rem;
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
 .bg-principal {
   --tw-bg-opacity: 1;
   background-color: rgb(0 59 54 / var(--tw-bg-opacity));
 }
 
-.bg-third {
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 38 34 / var(--tw-bg-opacity));
-}
-
 .bg-second {
   --tw-bg-opacity: 1;
   background-color: rgb(210 187 160 / var(--tw-bg-opacity));
+}
+
+.bg-third {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 38 34 / var(--tw-bg-opacity));
 }
 
 .px-10 {
