@@ -35,7 +35,7 @@
     <!-- NOISE -->
     <div id="noise"></div>
     <!-- LANDING -->
-    <header class="h-screen snap-always snap-start">
+    <header class="h-screen">
       <nav
         class="fixed top-0 z-50 flex items-center w-full backdrop-blur-md h-1/6 bg-third"
       >
@@ -51,7 +51,7 @@
             <a
               class="inline-flex items-center px-4 py-2 rounded bg-second regular text-principal h-max hover:bg-gray-400 hover:duration-500"
               href="#"
-              >ABOUT US</a
+              >TEAM</a
             >
             <a
               class="inline-flex items-center px-4 py-2 rounded bg-second regular text-principal h-max hover:bg-gray-400 hover:duration-500"
@@ -78,9 +78,79 @@
       </section>
     </header>
     <!-- ABOUT SECTION -->
-    <section
-      id="about"
-      class="h-screen snap-always snap-start bg-second"
-    ></section>
+    <section id="about" class="flex flex-col justify-around h-screen bg-second">
+      <div>
+        <h2 class="text-6xl text-center regular text-principal">
+          VACC TRUSTED COMPANIES
+        </h2>
+        <div class="scroller" data-animated="true">
+          <div class="scroller_inner">
+            <img
+              class="logo grayscale"
+              src="img/logos/A&W.svg"
+              alt="a&w logo"
+            />
+            <img
+              class="logo grayscale"
+              src="img/logos/benihana.svg"
+              alt="benihana logo"
+            />
+            <img
+              class="logo grayscale"
+              src="img/logos/Darna-Bistroquet.svg"
+              alt="Darna logo"
+            />
+            <img
+              class="logo grayscale"
+              src="img/logos/kfc.svg"
+              alt="kfc logo"
+            />
+            <img
+              class="logo grayscale"
+              src="img/logos/papajohns.svg"
+              alt="papajohns logo"
+            />
+            <img
+              class="logo grayscale"
+              src="img/logos/pizzahut.svg"
+              alt="pizzahut logo"
+            />
+            <img
+              class="logo grayscale"
+              src="img/logos/wendys.svg"
+              alt="wendys logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const scrollers = document.querySelectorAll(".scroller");
+
+      // If a user hasn't opted in for recuded motion, then we add the animation
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+      }
+
+      function addAnimation() {
+        scrollers.forEach((scroller) => {
+          // add data-animated="true" to every `.scroller` on the page
+          scroller.setAttribute("data-animated", true);
+
+          // Make an array from the elements within `.scroller-inner`
+          const scrollerInner = scroller.querySelector(".scroller_inner");
+          const scrollerContent = Array.from(scrollerInner.children);
+
+          // For each item in the array, clone it
+          // add aria-hidden to it
+          // add it into the `.scroller-inner`
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+          });
+        });
+      }
+    </script>
   </body>
 </html>
