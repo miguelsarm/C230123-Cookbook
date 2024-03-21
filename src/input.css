@@ -95,21 +95,20 @@
 
 /* FONT H1 */
 .principal {
-  font-family: "Almendra Display", serif;
+  font-family: "Cinzel Decorative", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Font regular */
-.regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+.principal-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
   font-style: normal;
 }
 
 /* CARROUSEL INFINITE */
 .scroller {
-  @apply mx-auto max-w-7xl;
+  @apply max-w-5xl mx-auto;
 }
 
 .scroller_inner {
@@ -158,5 +157,17 @@
 
 /* LOGO SIZE */
 .logo {
-  @apply w-32 h-32;
+  @apply w-20 h-20;
+}
+
+/* bg */
+.bg {
+  background-image: url(/public/img/icons/bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+/* TEXT SHADOW */
+.text-shadow {
+  text-shadow: 2px 2px 5px rgb(0, 59, 54);
 }

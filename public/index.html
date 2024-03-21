@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth snap-y snap-mandatory" lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,14 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Ultra&display=swap"
-      rel="stylesheet"
-    />
-    <!-- FONT 2 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ultra&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- NORMALIZE -->
@@ -37,7 +30,7 @@
     <!-- LANDING -->
     <header class="h-screen">
       <nav
-        class="fixed top-0 z-50 flex items-center w-full backdrop-blur-md h-1/6 bg-third"
+        class="sticky top-0 z-50 flex items-center w-full backdrop-blur-md h-1/6 bg-third"
       >
         <div class="flex justify-between w-4/5 mx-auto text-second">
           <!-- left -->
@@ -49,12 +42,12 @@
           <!-- right -->
           <div class="flex items-center w-2/5 justify-evenly">
             <a
-              class="inline-flex items-center px-4 py-2 rounded bg-second regular text-principal h-max hover:bg-gray-400 hover:duration-500"
+              class="inline-flex items-center px-4 py-2 font-sans font-semibold rounded bg-second text-principal h-max hover:bg-gray-400 hover:duration-500"
               href="#"
               >TEAM</a
             >
             <a
-              class="inline-flex items-center px-4 py-2 rounded bg-second regular text-principal h-max hover:bg-gray-400 hover:duration-500"
+              class="inline-flex items-center px-4 py-2 font-sans font-semibold rounded bg-second text-principal h-max hover:bg-gray-400 hover:duration-500"
               href="#"
               >RECIPES</a
             >
@@ -62,14 +55,16 @@
         </div>
       </nav>
       <section
-        class="relative flex flex-col items-center justify-center w-screen h-full"
+        class="relative flex flex-col items-end justify-center w-screen bg h-5/6"
       >
         <h1
-          class="py-5 text-center select-none text-second text-9xl principal h-max"
+          class="py-5 pr-5 text-center select-none text-second text-shadow principal-bold text-9xl h-max"
         >
-          VACC<br />COOKBOOK
+          Vacc<br />Cookbook
         </h1>
-        <a class="absolute bottom-4 motion-safe:animate-bounce" href="#about"
+        <a
+          class="absolute self-center opacity-100 bottom-4 motion-safe:animate-bounce"
+          href="#about"
           ><img
             class="w-14"
             src="../public/img/icons/arrowdown.svg"
@@ -78,10 +73,10 @@
       </section>
     </header>
     <!-- ABOUT SECTION -->
-    <section id="about" class="flex flex-col justify-around h-screen bg-second">
-      <div>
-        <h2 class="text-6xl text-center regular text-principal">
-          VACC TRUSTED COMPANIES
+    <section id="about" class="flex flex-col justify-start h-screen bg-second">
+      <div class="flex flex-col mt-10 justify-evenly h-2/5">
+        <h2 class="font-sans text-4xl font-bold text-center text-principal">
+          VACC PARTNERS
         </h2>
         <div class="scroller" data-animated="true">
           <div class="scroller_inner">
@@ -122,6 +117,34 @@
             />
           </div>
         </div>
+      </div>
+      <div
+        class="self-center w-1/2 m-4 border-b-4 rounded-xl border-b-principal"
+      ></div>
+      <h2
+        class="mb-4 font-sans text-4xl font-bold text-center uppercase text-principal"
+      >
+        Welcome to our culinary haven
+      </h2>
+      <div class="flex justify-center h-full mx-auto">
+        <img
+          class="w-1/2"
+          src="img/icons/eating.svg"
+          alt="Couple eating sweets and snacks"
+        />
+        <p
+          class="max-w-2xl px-4 py-8 my-auto font-sans text-lg text-center h-max text-second rounded-xl backdrop-blur-xl bg-principal"
+        >
+          our team of passionate chefs has meticulously crafted a treasure trove
+          of recipes to tantalize your taste buds. Within these digital pages,
+          each dish is not just a mere creation, but a masterpiece born from our
+          collective expertise and love for the culinary arts. With every recipe
+          meticulously curated and paired with captivating visuals, we invite
+          you to embark on a gastronomic journey unlike any other. So, prepare
+          to indulge in the artistry of our culinary creations as we invite you
+          to experience the exquisite world of our chef-crafted cookbook.
+          Welcome, and bon appétit!
+        </p>
       </div>
     </section>
     <script>
