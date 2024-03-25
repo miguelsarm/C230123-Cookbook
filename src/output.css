@@ -599,6 +599,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -609,6 +613,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-2\/5 {
@@ -695,6 +703,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -748,6 +760,11 @@ video {
 .bg-principal {
   --tw-bg-opacity: 1;
   background-color: rgb(0 59 54 / var(--tw-bg-opacity));
+}
+
+.bg-second {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 231 148 / var(--tw-bg-opacity));
 }
 
 .bg-third {
@@ -843,6 +860,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
@@ -867,6 +889,11 @@ video {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.text-principal {
+  --tw-text-opacity: 1;
+  color: rgb(0 59 54 / var(--tw-text-opacity));
 }
 
 .text-second {
@@ -1109,7 +1136,7 @@ video {
   left: 0;
   bottom: 0;
   width: 100%;
-  border-bottom: 1px solid rgb(250, 231, 148);
+  border-bottom: 1px solid currentColor;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: 0.5s ease-in;
@@ -1145,6 +1172,50 @@ video {
     top: 100%;
     bottom: 0;
   }
+}
+
+/* TABS LIST */
+
+.tablist {
+}
+
+/* EACH TAB  */
+
+.tabs {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div[role="tablist"] {
+  /* Match div with "tablist" role attribute */
+}
+
+button[role="tab"][aria-selected="true"] {
+  /* Match active tab */
+  border-radius: 0.125rem;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: rgb(0, 59, 54) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 59 54 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(1, 38, 34) var(--tw-gradient-to-position);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(250 231 148 / var(--tw-text-opacity));
+}
+
+button[aria-selected="true"]:hover::after {
+  transform: scaleX(0);
 }
 
 .hover\:bg-second:hover {

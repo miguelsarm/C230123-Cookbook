@@ -173,7 +173,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  border-bottom: 1px solid rgb(250, 231, 148);
+  border-bottom: 1px solid currentColor;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: 0.5s ease-in;
@@ -207,4 +207,24 @@
     top: 100%;
     bottom: 0;
   }
+}
+
+/* TABS LIST */
+.tablist {
+}
+/* EACH TAB  */
+.tabs {
+  @apply px-2 py-0 mx-10 my-5 h-max;
+}
+
+div[role="tablist"] {
+  /* Match div with "tablist" role attribute */
+}
+button[role="tab"][aria-selected="true"] {
+  /* Match active tab */
+  @apply px-4 py-2 rounded-sm bg-gradient-to-b from-principal to-third text-second;
+}
+
+button[aria-selected="true"]:hover::after {
+  transform: scaleX(0);
 }

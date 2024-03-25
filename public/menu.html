@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="icon" href="./img/icons/favicon.svg" />
+    <!-- FONTS 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- TAILWIND -->
+    <link href="/src/output.css" rel="stylesheet" />
+    <title>MENU - VACC COOKBOOK</title>
+  </head>
+  <body class="bg-principal">
+    <!-- NOISE -->
+    <div id="noise"></div>
+    <!-- NAVIGATION -->
+    <header>
+      <nav
+        class="z-50 flex items-center w-full backdrop-blur-md h-max bg-second"
+      >
+        <div class="flex justify-between w-4/5 mx-auto text-third">
+          <!-- left -->
+          <div class="flex items-center w-max justify-evenly">
+            <a class="px-10 py-5" href="index.html"
+              ><img src="../public/img/logos/VACCLOGO-2.svg" alt="logo"
+            /></a>
+          </div>
+          <!-- right -->
+          <div class="flex items-center w-2/5 justify-evenly">
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-third h-max nav-under"
+              href="#"
+              >TEAM</a
+            >
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-third h-max nav-under"
+              href="#"
+              >RECIPES</a
+            >
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-third h-max nav-under"
+              href="index.html#about"
+              >ABOUT</a
+            >
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-third h-max nav-under"
+              href="#"
+              >CONTACT</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- LOGO PAGE -->
+    <section class="flex justify-center w-screen h-max bg-second">
+      <h1
+        class="py-5 pr-5 mt-20 text-6xl text-center select-none w-max text-principal principal-bold h-max"
+      >
+        Vacc<br />Recipes
+      </h1>
+    </section>
+    <!-- TABS -->
+    <main class="bg-second">
+      <div class="wrapper">
+        <div
+          class="flex flex-wrap items-center justify-center font-sans text-2xl font-thin text-center text-third"
+          role="tablist"
+        >
+          <button
+            class="relative tabs nav-under"
+            id="tab-1"
+            aria-selected="true"
+            aria-controls="tab-panel-1"
+            role="tab"
+            type="button"
+          >
+            Tab 1
+          </button>
+          <button
+            class="relative tabs nav-under"
+            id="tab-2"
+            aria-selected="false"
+            aria-controls="tab-panel-2"
+            role="tab"
+            type="button"
+          >
+            Tab 2
+          </button>
+          <button
+            class="relative tabs nav-under"
+            id="tab-3"
+            aria-selected="false"
+            aria-controls="tab-panel-3"
+            role="tab"
+            type="button"
+          >
+            Tab 3
+          </button>
+        </div>
+        <div id="tab-panel-1" aria-labelledby="tab-1" role="tabpanel">
+          Tab 1 content
+        </div>
+        <div id="tab-panel-2" aria-labelledby="tab-2" role="tabpanel" hidden>
+          Tab 2 content
+        </div>
+        <div id="tab-panel-3" aria-labelledby="tab-3" role="tabpanel" hidden>
+          Tab 3 content
+        </div>
+      </div>
+    </main>
+    <footer class="w-screen h-max bg-gradient-to-b from-principal to-third">
+      <p
+        class="pt-8 font-sans font-light tracking-widest text-center text-second"
+      >
+        6050 Champlain Blvd, Verdun, Quebec H4H 1A5x
+      </p>
+      <div class="flex justify-center">
+        <img class="p-4 w-28 h-28" src="img/icons/favicon.svg" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>
