@@ -214,7 +214,7 @@
 }
 /* EACH TAB  */
 .tabs {
-  @apply py-4 duration-100 border-b-2 border-transparent rounded-t-lg hover:text-principal hover:border-principal hover:font-normal;
+  @apply p-4 duration-100 border-b-2 border-transparent rounded-t-lg hover:text-principal hover:border-principal hover:font-normal;
 }
 
 div[role="tablist"] {

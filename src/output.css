@@ -1175,8 +1175,7 @@ video {
   border-top-right-radius: 0.5rem;
   border-bottom-width: 2px;
   border-color: transparent;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   transition-duration: 100ms;
 }
 
