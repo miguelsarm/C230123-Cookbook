@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Chinese Cuisine Cooking</title>
+    <style>
+      body {
+        font-family: "Microsoft YaHei", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3; /* 浅灰色背景 */
+        background-image: linear-gradient(120deg, #fad0d0 0%, #830707 100%); /* 使用渐变色作为背景 */
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        color: #c00;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        animation: fadein 2s;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .recipe {
+        border-top: 2px solid #c00;
+        padding-top: 30px;
+      }
+
+      .recipe-image {
+        height: 300px;
+        background-image: url("images/food.jpg");
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .ingredients,
+      .instructions {
+        margin-bottom: 30px;
+      }
+
+      .ingredients h3,
+      .instructions h3 {
+        color: #c00;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .ingredients ul,
+      .instructions ol {
+        list-style: none;
+        padding: 0;
+      }
+
+      .ingredients li,
+      .instructions li {
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.6;
+        animation: slidein 1s ease-in-out;
+      }
+
+      .instructions ol {
+        counter-reset: step;
+        margin-left: 0;
+        padding-left: 20px;
+      }
+
+      .instructions ol li {
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        position: relative;
+        animation: slidein 1s ease-in-out;
+      }
+
+      .instructions ol li::before {
+        content: "\2022"; /* 使用实心圆点代替序号 */
+        font-weight: bold;
+        font-size: 22px;
+        position: absolute;
+        left: -20px;
+        top: 0;
+        color: #c00;
+      }
+
+      .step-image {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .summary {
+        background-color: #c00; /* 深红色背景 */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .summary p {
+        color: #fff; /* 白色文字 */
+        font-size: 24px; /* 字体大小增加到 24px */
+        line-height: 1.6;
+        animation: slidein 1s ease-in-out;
+      }
+
+      @keyframes slidein {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Chinese Cuisine Cooking</h1>
+      </header>
+      <section class="recipe">
+        <div class="recipe-image"></div>
+        <div class="ingredients">
+          <h3>Ingredients:</h3>
+          <ul>
+            <li>Pork</li>
+            <li>Ginger</li>
+            <li>Spring onion</li>
+            <li>Cooking wine</li>
+            <li>Soy sauce</li>
+            <li>Rock sugar</li>
+            <li>Bay leaves</li>
+            <li>Star anise</li>
+            <li>Cinnamon</li>
+          </ul>
+        </div>
+        <div class="instructions">
+          <h3>Instructions:</h3>
+          <ol>
+            <li>
+              <img
+                src="images/step1.jpg"
+                alt="Step 1"
+                class="step-image" />
+              Cut the pork into pieces and blanch in boiling water.
+            </li>
+            <li>
+              <img
+                src="images/step2.jpg"
+                alt="Step 2"
+                class="step-image" />
+              Heat oil in a pan, add ginger and spring onion, then fry the blanched pork until golden brown on both
+              sides.
+            </li>
+            <li>
+              <img
+                src="images/step3.jpg"
+                alt="Step 3"
+                class="step-image" />
+              Add cooking wine, soy sauce, rock sugar, bay leaves, star anise, and cinnamon, stir-fry evenly.
+            </li>
+            <li>
+              <img
+                src="images/step4.jpg"
+                alt="Step 4"
+                class="step-image" />
+              Add water, simmer over low heat until the pork is tender and flavorful.
+            </li>
+            <li>
+              <img
+                src="images/step5.jpg"
+                alt="Step 5"
+                class="step-image" />
+              Sprinkle with chopped spring onion before serving.
+            </li>
+          </ol>
+        </div>
+        <div class="summary">
+          <p>
+            Cooking red-braised pork requires patience and attention to detail. We hope you enjoy this delicious Chinese
+            dish!
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

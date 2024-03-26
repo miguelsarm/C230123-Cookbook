@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Cuisine - Red Curry Chicken</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFD700, #FF6347);
+            color: #333;
+            animation: gradientAnimation 10s infinite alternate; /* Add gradient animation */
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease; /* Add fade-in animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .recipe-img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            animation: zoomIn 2s ease; /* Add zoom-in animation */
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        .step {
+            margin-bottom: 20px;
+            opacity: 0; /* Initially hidden */
+            animation: slideIn 1s forwards; /* Add slide-in animation */
+        }
+        @keyframes slideIn {
+            to { opacity: 1; }
+        }
+        .step img {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+            animation: fadeIn 2s ease; /* Add fade-in animation */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thai Cuisine - Red Curry Chicken</h1>
+        <p>A delicious Thai dish, the recipe for red curry chicken</p>
+    </header>
+    <main>
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>Chicken</li>
+            <li>Red curry paste</li>
+            <li>Coconut milk</li>
+            <li>Onion</li>
+            <li>Green pepper</li>
+            <li>Chili</li>
+            <li>Garlic</li>
+            <li>Ginger</li>
+            <li>Lime leaves</li>
+            <li>Lemongrass</li>
+            <li>Salt</li>
+            <li>Pepper</li>
+            <li>Oil</li>
+        </ul>
+        <img class="recipe-img" src="images/red_curry_chicken.jpg" alt="Red Curry Chicken">
+        <h2>Preparation Steps:</h2>
+        <div class="step">
+            <h3>Step 1:</h3>
+            <p>Heat oil, add red curry paste, and stir-fry.</p>
+            <img src="images/step6.jpg" alt="Step 1">
+        </div>
+        <div class="step">
+            <h3>Step 2:</h3>
+            <p>Add diced chicken, stir-fry until browned.</p>
+            <img src="images/step7.jpg" alt="Step 2">
+        </div>
+        <div class="step">
+            <h3>Step 3:</h3>
+            <p>Add coconut milk, onion, green pepper, chili, garlic, ginger, lime leaves, and lemongrass.</p>
+            <img src="images/step8.jpg" alt="Step 3">
+        </div>
+        <div class="step">
+            <h3>Step 4:</h3>
+            <p>Cook until chicken is tender, season with salt and pepper to taste.</p>
+            <img src="images/step9.jpg" alt="Step 4">
+        </div>
+    </main>
+    <footer>
+        <h2>Summary:</h2>
+        <p>Red curry chicken is a delicious Thai dish, simple to make and full of flavor. Through this webpage, we learned the ingredients and steps to make red curry chicken. We hope you'll try making this dish and enjoy the taste of Thai cuisine.</p>
+    </footer>
+</body>
+</html>
