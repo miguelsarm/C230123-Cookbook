@@ -210,11 +210,12 @@
 }
 
 /* TABS LIST */
-.tablist {
+.wrapper {
+  @apply pt-5;
 }
 /* EACH TAB  */
 .tabs {
-  @apply p-4 duration-100 border-b-2 border-transparent rounded-t-lg hover:text-principal hover:border-principal hover:font-normal;
+  @apply px-4 py-3 duration-100 border-b-2 border-transparent rounded-t-lg hover:text-principal hover:border-principal hover:font-normal;
 }
 
 div[role="tablist"] {

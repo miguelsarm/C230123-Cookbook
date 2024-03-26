@@ -602,6 +602,10 @@ video {
   margin-top: 1rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1165,7 +1169,8 @@ video {
 
 /* TABS LIST */
 
-.tablist {
+.wrapper {
+  padding-top: 1.25rem;
 }
 
 /* EACH TAB  */
@@ -1175,7 +1180,10 @@ video {
   border-top-right-radius: 0.5rem;
   border-bottom-width: 2px;
   border-color: transparent;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   transition-duration: 100ms;
 }
 
