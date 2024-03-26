@@ -77,36 +77,39 @@
     <main class="bg-second">
       <div class="wrapper">
         <div
-          class="flex flex-wrap items-center justify-center font-sans text-2xl font-thin text-center text-third"
+          class="flex flex-wrap justify-between w-1/5 mx-auto font-sans text-2xl font-thin text-center border-b border-third text-third"
           role="tablist"
         >
           <button
-            class="relative tabs nav-under"
+            class="tabs"
             id="tab-1"
             aria-selected="true"
             aria-controls="tab-panel-1"
             role="tab"
             type="button"
+            tabindex="0"
           >
             Tab 1
           </button>
           <button
-            class="relative tabs nav-under"
+            class="tabs"
             id="tab-2"
             aria-selected="false"
             aria-controls="tab-panel-2"
             role="tab"
             type="button"
+            tabindex="-1"
           >
             Tab 2
           </button>
           <button
-            class="relative tabs nav-under"
+            class="tabs"
             id="tab-3"
             aria-selected="false"
             aria-controls="tab-panel-3"
             role="tab"
             type="button"
+            tabindex="-1"
           >
             Tab 3
           </button>
@@ -132,5 +135,35 @@
         <img class="p-4 w-28 h-28" src="img/icons/favicon.svg" alt="" />
       </div>
     </footer>
+    <script>
+      const tabElements = document.querySelectorAll('button[role="tab"]');
+      const panelElements = document.querySelectorAll('[role="tabpanel"]');
+      let activeIndex = 0;
+
+      // Listen to clicks on tabs
+      tabElements.forEach(function (tab, index) {
+        tab.addEventListener("click", function (event) {
+          setActiveTab(index);
+        });
+      });
+      function setActiveTab(index) {
+        // Make currently active tab inactive
+        tabElements[activeIndex].setAttribute("aria-selected", "false");
+        // Set the new tab as active
+        tabElements[index].setAttribute("aria-selected", "true");
+
+        setActivePanel(index);
+        activeIndex = index;
+      }
+      function setActivePanel(index) {
+        // Hide currently active panel
+        panelElements[activeIndex].setAttribute("hidden", "");
+        panelElements[activeIndex].tabIndex = -1;
+
+        // Show the new active panel
+        panelElements[index].removeAttribute("hidden");
+        panelElements[index].tabIndex = 0;
+      }
+    </script>
   </body>
 </html>
