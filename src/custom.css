@@ -95,7 +95,7 @@
 
 .icon-back::before {
   content: " ";
-  background-image: url(/public/img/icons/back-arrow.svg);
+  background-image: url(../public/img/icons/back-arrow.svg);
   background-repeat: no-repeat;
   display: inline-block;
   width: 20px;
