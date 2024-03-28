@@ -600,6 +600,10 @@ video {
   margin-bottom: auto;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -722,6 +726,10 @@ video {
   max-width: 42rem;
 }
 
+.shrink {
+  flex-shrink: 1;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -817,10 +825,6 @@ video {
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .from-principal {
@@ -1204,6 +1208,7 @@ button[aria-selected="true"]:hover::after {
 }
 
 .link {
+  margin-bottom: 0.5rem;
   height: -moz-max-content;
   height: max-content;
   width: -moz-max-content;
@@ -1211,7 +1216,6 @@ button[aria-selected="true"]:hover::after {
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(1 38 34 / var(--tw-border-opacity));
-  padding-left: 1.25rem;
   text-align: left;
   --tw-text-opacity: 1;
   color: rgb(1 38 34 / var(--tw-text-opacity));
@@ -1228,15 +1232,15 @@ button[aria-selected="true"]:hover::after {
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
-  margin-bottom: 2rem;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 0;
 }
 
 .link a {
+  margin-top: 0px;
   display: block;
   width: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1.25rem;
 }
 
 .link h2 {

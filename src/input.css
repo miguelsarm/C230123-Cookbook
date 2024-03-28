@@ -154,18 +154,14 @@ button[aria-selected="true"]:hover::after {
   column-gap: 2rem;
 }
 .link {
-  @apply text-left pl-5 w-max h-max text-third hover:rounded-xl border-b-2 border-third hover:bg-[#DCCC82] hover:duration-200;
+  @apply text-left mb-2 w-max h-max text-third hover:rounded-xl border-b-2 border-third hover:bg-[#DCCC82] hover:duration-200;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
-  margin-bottom: 2rem;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 0;
 }
 
 .link a {
-  @apply block w-60;
+  @apply block pt-4 pb-8 pl-5 mt-0 w-60;
 }
 .link h2 {
   @apply block font-semibold uppercase;
