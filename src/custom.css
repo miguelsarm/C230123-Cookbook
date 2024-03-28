@@ -1,0 +1,109 @@
+/* FONT H1 */
+.principal {
+  font-family: "Cinzel Decorative", Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.principal-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* TEXT SHADOW */
+.text-shadow {
+  text-shadow: 2px 2px 5px rgb(0, 59, 54);
+}
+
+/* UNDERLINE NAV ANIMATION */
+.nav-under::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid currentColor;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: 0.5s ease-in;
+}
+
+.nav-under:hover::after {
+  transform: scaleX(1);
+}
+
+.line {
+  transform: translateX(-50%);
+}
+.line-vertical {
+  animation: loader 1.5s ease infinite;
+  display: block;
+  background-color: rgb(250, 231, 148);
+  position: absolute;
+}
+
+@keyframes loader {
+  10% {
+    top: 0;
+    bottom: 100%;
+  }
+
+  50% {
+    top: 0;
+    bottom: 0;
+  }
+  100% {
+    top: 100%;
+    bottom: 0;
+  }
+}
+
+/* LI NUMBER BEFORE */
+.ul-li {
+  margin-bottom: 20px;
+}
+
+.counter {
+  counter-reset: li;
+}
+
+.ol-li {
+  padding-left: 20px;
+  margin-left: 2rem;
+  border-left: 1px solid rgb(1, 38, 34);
+  margin-bottom: 2rem;
+}
+
+.ol-li::before {
+  @apply font-sans text-third;
+  counter-increment: li;
+  content: counter(li);
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 40px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* BACK BUTTON BEFORE  */
+
+.icon-back::before {
+  content: " ";
+  background-image: url(/public/img/icons/back-arrow.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transition-duration: 500ms;
+}
+
+.icon-back:hover::before {
+  margin-right: 15px;
+  transition-duration: 500ms;
+}

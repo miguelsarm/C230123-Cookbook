@@ -70,42 +70,6 @@
 }
 /* NOISE FINISH */
 
-/* BOUNCE ANIMATION START */
-
-.bounce {
-  animation: bounce 2s ease infinite;
-}
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-/* BOUNCE ANIMATION FINISH */
-
-/* FONT H1 */
-.principal {
-  font-family: "Cinzel Decorative", Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.principal-bold {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* CARROUSEL INFINITE */
 .scroller {
   @apply max-w-5xl mx-auto;
@@ -140,74 +104,27 @@
 }
 
 /* .scroller[data-direction="right"] {
-  --_animation-direction: reverse;
-}
-
-.scroller[data-direction="left"] {
-  --_animation-direction: forwards;
-}
-
-.scroller[data-speed="fast"] {
-  --_animation-duration: 20s;
-}
-
-.scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
-} */
+      --_animation-direction: reverse;
+    }
+    
+    .scroller[data-direction="left"] {
+      --_animation-direction: forwards;
+    }
+    
+    .scroller[data-speed="fast"] {
+      --_animation-duration: 20s;
+    }
+    
+    .scroller[data-speed="slow"] {
+      --_animation-duration: 60s;
+    } */
 
 /* LOGO SIZE */
 .logo {
   @apply w-24 h-24 opacity-50;
 }
 
-/* TEXT SHADOW */
-.text-shadow {
-  text-shadow: 2px 2px 5px rgb(0, 59, 54);
-}
-
-/* UNDERLINE NAV ANIMATION */
-.nav-under::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border-bottom: 1px solid currentColor;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: 0.5s ease-in;
-}
-
-.nav-under:hover::after {
-  transform: scaleX(1);
-}
-
-.line {
-  transform: translateX(-50%);
-}
-.line-vertical {
-  animation: loader 1.5s ease infinite;
-  display: block;
-  background-color: rgb(250, 231, 148);
-  position: absolute;
-}
-
-@keyframes loader {
-  10% {
-    top: 0;
-    bottom: 100%;
-  }
-
-  50% {
-    top: 0;
-    bottom: 0;
-  }
-  100% {
-    top: 100%;
-    bottom: 0;
-  }
-}
+/* CARROUSSEL FINISH */
 
 /* TABS LIST */
 .wrapper {
@@ -215,7 +132,7 @@
 }
 /* EACH TAB  */
 .tabs {
-  @apply px-4 py-3 duration-100 border-b-2 border-transparent rounded-t-lg hover:text-principal hover:border-principal hover:font-normal;
+  @apply px-4 py-2 duration-100 border-b-2 border-transparent rounded-t-lg w-36 hover:text-principal hover:border-principal hover:font-normal;
 }
 
 div[role="tablist"] {
@@ -229,3 +146,32 @@ button[role="tab"][aria-selected="true"] {
 button[aria-selected="true"]:hover::after {
   transform: scaleX(0);
 }
+
+/* EVERY LINK STYLE */
+.column {
+  column-count: 2;
+  column-width: 50%;
+  column-gap: 2rem;
+}
+.link {
+  @apply text-left pl-5 w-max h-max text-third hover:rounded-xl border-b-2 border-third hover:bg-[#DCCC82] hover:duration-200;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 0;
+}
+
+.link a {
+  @apply block w-60;
+}
+.link h2 {
+  @apply block font-semibold uppercase;
+}
+.link p {
+  @apply block pl-1 mt-1 mr-10 font-light;
+}
+
+/* TAB AND MENU FINISH */
