@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="icon" href="../../public/img/icons/favicon.svg" />
+    <!-- FONTS 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- TAILWIND -->
+    <link href="../../src/output.css" rel="stylesheet" />
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="../../src/custom.css" />
+    <title>chinese braised pork - VACC COOKBOOK</title>
+  </head>
+
+  <body class="bg-second">
+    <!-- NOISE -->
+    <div id="noise"></div>
+    <!-- NAVIGATION -->
+    <header>
+      <nav
+        class="fixed top-0 z-50 flex items-center w-full backdrop-blur-md h-max bg-gradient-to-b from-principal to-third"
+      >
+        <div class="flex justify-between w-4/5 mx-auto text-second">
+          <!-- left -->
+          <div class="flex items-center w-max justify-evenly">
+            <a class="px-10 py-5" href="../../public/index.html"
+              ><img src="../../public/img/logos/VACCLOGO.svg" alt="logo"
+            /></a>
+          </div>
+          <!-- right -->
+          <div class="flex items-center w-2/5 justify-evenly">
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-second h-max nav-under"
+              href="#"
+              >TEAM</a
+            >
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-second h-max nav-under"
+              href="../../public/menu.html"
+              >RECIPES</a
+            >
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-second h-max nav-under"
+              href="../../public/index.html#about"
+              >ABOUT</a
+            >
+            <a
+              class="relative items-center inline-block px-2 font-sans font-thin text-second h-max nav-under"
+              href="#"
+              >CONTACT</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- INTRODUCTION PAGE -->
+    <section class="">
+      <div class="block py-20 text-6xl text-principal principal-bold">
+        <h1 class="pt-20 mx-auto mb-2 w-max">chinese braised pork</h1>
+        <p class="mx-auto mb-2 font-sans text-xl font-thin w-max">BY DAN</p>
+        <p class="mx-auto mb-2 font-sans text-xl font-thin w-max">
+          March 18, 2024
+        </p>
+      </div>
+      <div class="block">
+        <div
+          style="
+            background: url(./RECEPIES/braisedpork.jpeg) no-repeat center center;
+            background-size: cover;
+            height: 480px;
+          "
+        ></div>
+      </div>
+    </section>
+    <section class="w-5/6 mx-auto">
+      <!-- INGREDIENTS -->
+      <aside class="inline-block w-2/6 p-10 align-top">
+        <h3 class="mb-8 font-sans text-4xl font-light text-principal">
+          INGREDIENTS
+        </h3>
+        <ul class="pl-5 mt-4 text-xl font-light list-disc text-principal">
+          <li class="ul-li">Pork</li>
+          <li class="ul-li">Ginger</li>
+          <li class="ul-li">Spring onion</li>
+          <li class="ul-li">Cooking wine</li>
+          <li class="ul-li">Soy sauce</li>
+          <li class="ul-li">Rock sugar</li>
+          <li class="ul-li">Bay leaves</li>
+          <li class="ul-li">Star anise</li>
+          <li class="ul-li">Cinnamon</li>
+        </ul>
+      </aside>
+      <!-- COOKING INSTRUCTIONS -->
+      <article class="inline-block w-3/6 p-10 align-top">
+        <h3 class="mb-8 font-sans text-4xl font-light text-principal">
+          COOKING INSTRUCTIONS
+        </h3>
+        <ol class="mt-4 text-xl font-light l-5 text-principal counter">
+          <li class="relative ol-li">
+            Cut the pork into pieces and blanch in boiling water.
+          </li>
+          <li class="relative ol-li">
+            Heat oil in a pan, add ginger and spring onion, then fry the
+            blanched pork until golden brown on both sides.
+          </li>
+          <li class="relative ol-li">
+            Add cooking wine, soy sauce, rock sugar, bay leaves, star anise, and
+            cinnamon, stir-fry evenly.
+          </li>
+          <li class="relative ol-li">
+            Add water, simmer over low heat until the pork is tender and
+            flavorful.
+          </li>
+          <li class="relative ol-li">
+            Sprinkle with chopped spring onion before serving.
+          </li>
+        </ol>
+      </article>
+    </section>
+    <div class="">
+      <div class="p-8 ml-8">
+        <a
+          class="font-sans text-2xl font-medium icon-back bef text-principal"
+          href="../../public/menu.html"
+          >BACK</a
+        >
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="w-screen h-max bg-gradient-to-b from-principal to-third">
+      <p
+        class="pt-8 font-sans font-light tracking-widest text-center text-second"
+      >
+        6050 Champlain Blvd, Verdun, Quebec H4H 1A5x
+      </p>
+      <div class="flex justify-center">
+        <img
+          class="p-4 w-28 h-28"
+          src="../../public/img/icons/favicon.svg"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
+</html>
